@@ -56,7 +56,7 @@ This is a simple weather application built using the MERN stack (MongoDB, Expres
 - Create a database and obtain your MongoDB URI.
 - Create a `.env` file in the root directory and add your MongoDB URI and OpenWeatherMap API key:
 
-  ```  MONGO_URI=your_mongodb_uri  ```
+  ```  MONGO_URI=your_mongodb_uri  ```  
   ```  WEATHER_API_KEY=your_openweathermap_api_key ```
 
 
