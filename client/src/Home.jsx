@@ -74,7 +74,7 @@ function Home() {
             {weather.weather === 'Snow' && (
               <img src={snow} alt="Snow" className="mx-auto mb-10" />
             )}
-            <p className='text-lg -mt-10 '>Temperature: {weather.temp}°C</p>
+            <p className='text-lg -mt-10 '>Temperature: {(weather.temp - 273.15).toFixed(2)}°C</p>
             <div className='flex justify-between items-center mt-4'>
               <div className='flex flex-col items-center'>
                 <img src={humidity} alt="Humidity" className="w-6 h-6 mb-2" />

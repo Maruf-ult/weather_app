@@ -9,11 +9,12 @@ export const postCity = async (req, res) => {
     try {
         const response = await axios.get(api);
         const { weather, main: { temp, humidity }, wind: { speed: windspeed } } = response.data;
-
+        
+    
         const newCity = new userData({
             city,
             weather: weather[0].main,
-            temp,
+            temp:temp,
             humidity,
             windspeed
         });
