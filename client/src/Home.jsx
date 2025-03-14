@@ -16,12 +16,12 @@ function Home() {
   const postCity = async () => {
     try {
       console.log('Posting city:', city);
-      const response = await axios.post('http://localhost:3000/api/city', { city });
+      const response = await axios.post('https://weather-app-gdz0.onrender.com/api/city', { city });
       const res = response.data;
       console.log('City response:', res);
 
       // Fetch weather data after posting the city
-      const weatherResponse = await axios.get('http://localhost:3000/api/weather', { params: { city: res.newCity.city } });
+      const weatherResponse = await axios.get('https://weather-app-gdz0.onrender.com/api/weather', { params: { city: res.newCity.city } });
       console.log('Weather response:', weatherResponse.data);
       setWeather(weatherResponse.data.data);
     } catch (error) {
