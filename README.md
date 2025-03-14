@@ -1,5 +1,8 @@
 # MERN Weather App
 
+# Live link
+https://weather-app-1-x9vz.onrender.com
+
 
 ## Description
 This is a simple weather application built using the MERN stack (MongoDB, Express, React, Node.js). The app allows users to enter a city name and retrieve the current temperature, humidity, and wind speed for that location.
